@@ -13,7 +13,7 @@ Employee Management Application, allows you to interact with your employee data 
 <h4>Add Employee Window</h4>
 <img src="/src/assets/addScreen.png" alt="Add Employee Window" />
 <h4>Update Employee Window</h4>
-<img src="/src/assets/addScreen.png" alt="Update Employee Window" />
+<img src="/src/assets/updateScreen.png" alt="Update Employee Window" />
 
 ### Running the Application
 1. Open your terminal and navigate to the project directory.
