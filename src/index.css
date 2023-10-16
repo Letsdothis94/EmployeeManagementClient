@@ -1,0 +1,270 @@
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+th, li {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+          /* HEADER */
+nav {
+  background-color: #282c34;
+  color: white;
+  width: 100%;
+  display: inline-flex;
+}
+
+.title-div {
+  width: 49%; 
+  display: flex;
+  flex-wrap: wrap; 
+  align-content: center; 
+  padding-left: 0.5rem;
+}
+
+.ul-div {
+  width: 49%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  color: white;
+}
+
+li {
+  display: inline;
+  border-left: 2px;
+  padding-left: 1rem;
+  border-bottom: 3px solid white;
+  transition: all 0.25s linear;
+  position: relative;
+}
+
+.link-style {
+  color: white;
+  text-decoration: none;
+}
+
+li:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #61a3ff;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  /* this is to match where the border is */
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s linear;
+  /*   will-change: transform; */
+}
+
+li:hover:before {
+  transform: scale(1);
+}
+
+          /* EmployeeList */
+.div-list-container {
+  border: 1px solid grey; 
+  margin: auto; 
+  width: 80%; 
+  padding: 3%; 
+  margin-top: 10%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.list-title {
+  display: flex;
+  justify-content: center;
+}
+
+.list-table-container {
+  display: flex;;
+  justify-content: center;
+}
+
+
+table {
+  border: 1px solid black;
+  width: 99%;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+td:hover {
+  background-color: grey;
+}
+
+th {
+  background-color: #023E8A;
+  color: white;
+}
+
+.table-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.update-btn {
+  background-color: #00B4D8;
+  padding: 2%;
+  border-radius: 10%;
+
+}
+
+.delete-btn {
+  background-color: #9B2226;
+  color: white;
+  padding: 2%;
+  border-radius: 10%;
+}
+
+/* ADD EMPLOYEE */
+.add-section {
+  border: 1px solid grey;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  margin-top: 10%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.title-div-add {
+  display: flex; 
+  justify-content: center;
+}
+
+.div-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 8px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.save-btn {
+  width: 49%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  margin: 4px 0;
+  margin-right: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.dlt-btn {
+  width: 49%;
+  background-color: #9B2226;
+  color: white;
+  padding: 6px 12px;
+  margin: 4px 0;
+  margin-left: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dlt-btn:hover {
+  background-color: #da585a;
+}
+
+/* Footer */
+footer {
+background-color: #282c34;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+height: 50px;
+color: white;
+}
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
